@@ -1,0 +1,11 @@
+# folders to get ignored by git:
+
+.parcel-cache/
+.vscode/
+dist/
+node_modules/
+
+
+
+# files to get ignored by git:
+

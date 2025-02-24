@@ -1,0 +1,132 @@
+/* "itIsChristmas" class to be used by christmasTimer.js to hide or show the .calendar__clock children*/
+.calendar__clock.itIsChristmas .calendar__clock--timer,
+.calendar__clock.itIsChristmas .calendar__clock--text {
+  display: none;
+}
+
+.calendar__clock {
+  grid-column: 4 / 13;
+  grid-row: 1 / 4;
+
+  display: flex;
+  /* display: none; */
+  justify-content: center;
+  align-items: center;
+  /* gap: 1rem; */
+
+  color: var(--image-bg-color1);
+  font-family: Fraunces, serif;
+  font-size: 1.5rem;
+  /* border: 1px solid white; */
+  overflow: hidden;
+  position: relative;
+}
+
+.calendar__clock--timer {
+  flex-grow: 1;
+  display: flex;
+  /* display: none; */
+  column-gap: 1rem;
+  justify-content: center;
+}
+
+.calendar__clock--timer > div {
+  width: calc(100% / 4);
+  /* height: 80%; */
+  aspect-ratio: 1 / 1;
+  /* border: 0.5rem solid red; */
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar__clock--timer > div video {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+
+  mix-blend-mode: screen;
+  filter: contrast(20) brightness(50);
+  position: absolute;
+  z-index: -1;
+  /* object-fit: conver; */
+}
+
+.calendar__clock--timer > div > div {
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  background-color: transparent;
+  box-shadow: 0 0 0 0.1rem rgba(255, 255, 255, 1);
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.calendar__clock--timer > div > div span:nth-child(1) {
+  font-size: clamp(5%, 90%, 90%);
+  color: white;
+  /* filter: brightness(10) contrast(10); */
+}
+.calendar__clock--timer > div > div span:nth-child(2) {
+  font-size: clamp(5%, 50%, 60%);
+  color: white;
+}
+
+.calendar__clock--text {
+  /* display: none; */
+  flex-basis: max-content;
+  margin: 0rem 1rem;
+  /* font-family: "roboto"; */
+  /*   font-style: italic; */
+  font-family: "Fraunces", serif;
+  font-weight: 500;
+  color: #fff;
+  text-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+  position: relative;
+}
+
+.wonderful {
+  background: linear-gradient(90deg, #fff, #ffd700, #fff);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: shine 6s linear infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* .calendar__clock--text span:nth-child(1) {
+    font-family: "roboto";
+    font-weight: 200;
+  }
+  .calendar__clock--text span:nth-child(2) {
+    font-family: "Alex Brush";
+    font-weight: 300;
+    font-size: 2.5rem;
+  } */
+
+/* .calendar__clock--text::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: clockText 10s linear infinite;
+  }
+ */

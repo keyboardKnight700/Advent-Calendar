@@ -1,0 +1,73 @@
+/* Roboto Font-Family */
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Alex Brush Font-Family */
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url(calendar.css);
+@import url(merryChristmas.css);
+@import url(calendarClock.css);
+@import url(calendarSantaFigure.css);
+@import url(calendarDays.css);
+@import url(backgroundAnimation.css);
+
+:root {
+  --bg-color: #f0f0f0;
+  --color-white: #fff;
+  --color-border: #ccc;
+  --color-box-shadow: rgba(0, 0, 0, 0.1);
+
+  /************************/
+  /* Background colors for images */
+  --image-bg-color1: #a61c41;
+  --image-bg-color2: #30588c;
+  --image-bg-color3: #f2cc85;
+
+  font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.body {
+  font-family: Arial, sans-serif;
+  /* background-color: var(--bg-color); */
+  /* background-color: #9b7272; */
+  background-color: #042940;
+  /* background-position: contain; */
+  /* background-color: yellow; */
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 5rem; */
+  position: relative;
+  overflow: hidden;
+  margin-left: -2rem;
+}
+
+.lowResolutionScreenMessage {
+  display: none;
+  color: white;
+  font-size: 2rem;
+}
+
+@media (max-width: 767px) {
+  .calendar {
+    display: none;
+  }
+
+  .lowResolutionScreenMessage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+  }
+}

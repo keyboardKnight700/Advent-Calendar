@@ -1,0 +1,41 @@
+.star {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  --starAnimationDuration: 3s;
+  transition: all 1s ease;
+  animation: starAnimation var(--starAnimationDuration) ease infinite;
+}
+
+@keyframes starAnimation {
+  0% {
+    transform: scale(0.2);
+    /* filter: blur(200px); */
+    opacity: 0;
+  }
+  50% {
+    transform: scale(0.6);
+  }
+  80% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+    /* filter: blur(0px); */
+    opacity: 1;
+  }
+}

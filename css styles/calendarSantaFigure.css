@@ -1,0 +1,29 @@
+.calendar__santaFigure {
+  grid-column: 1 / 4;
+  grid-row: 4 / 13;
+
+  margin-right: 2rem;
+  margin-top: 2rem;
+}
+
+.calendar__santaFigure-wrapper {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+
+  overflow: clip;
+  scrollbar-width: none;
+
+  cursor: default;
+  user-select: none;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+}
+
+.calendar__santaFigure-iframe {
+  width: 100%;
+  height: 100%;
+  overflow-y: clip;
+  scrollbar-width: none;
+}

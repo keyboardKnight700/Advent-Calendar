@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advent Calendar</title>
+    <link rel="stylesheet" href="css styles/main.css" />
+
+    <!-- Fraunces bold font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Polyfills for better browser support -->
+    <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=default,es2015,es2016,es2017,es2018,es2019,es2020,fetch"></script> -->
+    <script type="module" src="Controller.js"></script>
+  </head>
+  <body class="body">
+    <!--     <video
+      class="bgVideo"
+      src="background_video_2.mp4"
+      autoplay
+      loop
+      muted
+    ></video> -->
+    <p class="lowResolutionScreenMessage">
+      Pleases view this Website on a larger screen 📺
+    </p>
+
+    <main class="calendar">
+      <section class="calendar__clock">
+        <div class="calendar__clock--timer">
+          <div class="calendar__clock--timer-days">
+            <!--             <video
+              class="timerVideo"
+              src="timer_video.mp4"
+              autoplay
+              muted
+              loop
+            ></video> -->
+            <div>
+              <span id="days">00</span>
+              <span>Days</span>
+            </div>
+          </div>
+
+          <div class="calendar__clock--timer-hours">
+            <!--             <video
+              class="timerVideo"
+              src="timer_video.mp4"
+              autoplay
+              muted
+              loop
+            ></video> -->
+            <div>
+              <span id="hours">00</span>
+              <span>Hours</span>
+            </div>
+          </div>
+
+          <div class="calendar__clock--timer-minutes">
+            <!--             <video
+              class="timerVideo"
+              src="timer_video.mp4"
+              autoplay
+              muted
+              loop
+            ></video> -->
+            <div>
+              <span id="minutes">00</span>
+              <span>Minutes</span>
+            </div>
+          </div>
+
+          <div class="calendar__clock--timer-seconds">
+            <!--             <video
+              class="timerVideo"
+              src="timer_video.mp4"
+              autoplay
+              muted
+              loop
+            ></video> -->
+            <div>
+              <span id="seconds">00</span>
+              <span>Seconds</span>
+            </div>
+          </div>
+        </div>
+
+        <h3
+          data-text="till the most wonderful time of the year!"
+          class="calendar__clock--text"
+        >
+          <span>till the</span>
+          <span
+            ><span>most </span> <span class="wonderful">wonderful</span> time of
+            the year!</span
+          >
+        </h3>
+
+        <div class="merryChristmas">
+          <figure class="merryChristmas__image">
+            <div class="merryChristmas__image--gifts">
+              <img
+                class="gift gift4"
+                src="imgs/merryChristmas/gift_4.png"
+                alt=""
+              />
+              <img
+                class="gift gift3"
+                src="imgs/merryChristmas/gift_3.png"
+                alt=""
+              />
+              <img
+                class="gift gift2"
+                src="imgs/merryChristmas/gift_2.png"
+                alt=""
+              />
+              <img
+                class="gift gift1"
+                src="imgs/merryChristmas/gift_1.png"
+                alt=""
+              />
+            </div>
+            <div class="merryChristmas__image--santa">
+              <img class="santa" src="imgs/merryChristmas/Santa.png" alt="" />
+            </div>
+          </figure>
+
+          <div class="merryChristmas__text">
+            <p>Merry Christmas</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="calendar__santaFigure">
+        <div class="calendar__santaFigure-wrapper">
+          <iframe
+            class="calendar__santaFigure-iframe"
+            src="iframe.html"
+            frameborder="0"
+          ></iframe>
+        </div>
+      </section>
+
+      <section class="calendar__days">
+        <div class="calendar__day calendar__day--1">
+          <div class="calendar__day--frontSide calendar__day--1-frontSide">
+            <p class="calendar__day-text calendar__day-text--1">01</p>
+            <img
+              class="calendar__day-image"
+              src="imgs/image1.png"
+              alt="christmas tree"
+            />
+          </div>
+          <div class="calendar__day--backSide calendar__day--1-backSide">
+            Back
+          </div>
+        </div>
+
+        <div class="calendar__day calendar__day--2">
+          <div class="calendar__day--frontSide calendar__day--2-frontSide">
+            <p class="calendar__day-text calendar__day-text--2">02</p>
+            <img
+              class="calendar__day-image calendar__day-image--2"
+              src="imgs/image2.png"
+              alt="santa flying"
+              loading="lazy"
+            />
+          </div>
+          <div class="calendar__day--backSide calendar__day--2-backSide">
+            Back
+          </div>
+        </div>
+
+        <div class="calendar__day calendar__day--3">
+          <div class="calendar__day--frontSide calendar__day--3-frontSide">
+            <p class="calendar__day-text calendar__day-text--3">03</p>
+            <img
+              class="calendar__day-image calendar__day-image--3"
+              src="imgs/image3.png"
+              alt="christmas bells"
+              loading="lazy"
+            />
+          </div>
+          <div class="calendar__day--backSide calendar__day--3-backSide">
+            Back
+          </div>
+        </div>
+
+        <div class="calendar__day calendar__day--4">
+          <div class="calendar__day--frontSide calendar__day--4-frontSide">
+            <p class="calendar__day-text calendar__day-text--4">04</p>
+            <img
+              class="calendar__day-image calendar__day-image--4"
+              src="imgs/image4.png"
+              alt="christmas candy"
+              loading="lazy"
+            />
+          </div>
+          <div class="calendar__day--backSide calendar__day--4-backSide">
+            Back
+          </div>
+        </div>
+
+        <div class="calendar__day calendar__day--5">
+          <div class="calendar__day--frontSide calendar__day--5-frontSide">
+            <p class="calendar__day-text calendar__day-text--5">05</p>
+            <img
+              class="calendar__day-image calendar__day-image--5"
+              src="imgs/image5.png"
+              alt="two wine glasses"
+              loading="lazy"
+            />
+          </div>
+          <div class="calendar__day--backSide calendar__day--5-backSide">
+            Back
+          </div>
+        </div>
+
+        <div class="calendar__day calendar__day--6">
+          <div class="calendar__day--frontSide calendar__day--6-frontSide">
+            <p class="calendar__day-text calendar__day-text--6">06</p>
+            <img
+              class="calendar__day-image calendar__day-image--6"
+              src="imgs/image6.png"
+              alt="stars"
+              loading="lazy"
+            />
+          </div>
+          <div class="calendar__day--backSide calendar__day--6-backSide">
+            Back
+          </div>
+        </div>
+
+        <div class="calendar__day calendar__day--7">
+          <div class="calendar__day--frontSide calendar__day--7-frontSide">
+            <p class="calendar__day-text calendar__day-text--7">07</p>
+            <img
+              class="calendar__day-image calendar__day-image--7"
+              src="imgs/image7.png"
+              alt="two persons decorating a christmas tree"
+              loading="lazy"
+            />
+          </div>
+          <div class="calendar__day--backSide calendar__day--7-backSide">
+            Back
+          </div>
+        </div>
+
+        <div class="calendar__day calendar__day--8">
+          <div class="calendar__day--frontSide calendar__day--8-frontSide">
+            <p class="calendar__day-text calendar__day-text--8">08</p>
+            <img
+              class="calendar__day-image calendar__day-image--8"
+              src="imgs/image8.png"
+              alt="singing christmas angel"
+              loading="lazy"
+            />
+          </div>
+          <div class="calendar__day--backSide calendar__day--8-backSide">
+            Back
+          </div>
+        </div>
+
+        <div class="calendar__day calendar__day--9">
+          <div class="calendar__day--frontSide calendar__day--9-frontSide">
+            <p class="calendar__day-text calendar__day-text--9">09</p>
+            <img
+              class="calendar__day-image calendar__day-image--9"
+              src="imgs/image9.png"
+              alt="christmas gift"
+              loading="lazy"
+            />
+          </div>
+          <div class="calendar__day--backSide calendar__day--9-backSide">
+            Back
+          </div>
+        </div>
+
+        <div class="calendar__day calendar__day--10">
+          <div class="calendar__day--frontSide calendar__day--10-frontSide">
+            <p class="calendar__day-text calendar__day-text--10">10</p>
+            <img
+              class="calendar__day-image calendar__day-image--10"
+              src="imgs/image10.png"
+              alt="christmas fireworks"
+              loading="lazy"
+            />
+          </div>
+          <div class="calendar__day--backSide calendar__day--10-backSide">
+            Back
+          </div>
+          <!-- <video class="video" src="imgs/video10.mp4" autoplay loop></video> -->
+        </div>
+
+        <div class="calendar__day calendar__day--11">
+          <div class="calendar__day--frontSide calendar__day--11-frontSide">
+            <p class="calendar__day-text calendar__day-text--11">11</p>
+            <img
+              class="calendar__day-image calendar__day-image--11"
+              src="imgs/image11.png"
+              alt="a raindeer among pine trees"
+              loading="lazy"
+            />
+          </div>
+          <div class="calendar__day--backSide calendar__day--11-backSide">
+            Back
+          </div>
+        </div>
+
+        <div class="calendar__day calendar__day--12">
+          <div class="calendar__day--frontSide calendar__day--12-frontSide">
+            <p class="calendar__day-text calendar__day-text--12">12</p>
+            <img
+              class="calendar__day-image calendar__day-image--12"
+              src="imgs/image12.png"
+              alt="colorful hearts"
+              loading="lazy"
+            />
+          </div>
+          <div class="calendar__day--backSide calendar__day--12-backSide">
+            Back
+          </div>
+        </div>
+
+        <div class="calendar__day calendar__day--13">
+          <div class="calendar__day--frontSide calendar__day--13-frontSide">
+            <p class="calendar__day-text calendar__day-text--13">13</p>
+            <img
+              class="calendar__day-image calendar__day-image--13"
+              src="imgs/image13.png"
+              alt="gingerbread man"
+              loading="lazy"
+            />
+          </div>
+          <div class="calendar__day--backSide calendar__day--13-backSide">
+            Back
+          </div>
+        </div>
+
+        <div class="calendar__day calendar__day--14">
+          <div class="calendar__day--frontSide calendar__day--14-frontSide">
+            <p class="calendar__day-text calendar__day-text--14">14</p>
+            <img
+              class="calendar__day-image calendar__day-image--14"
+              src="imgs/image14.png"
+              alt="santa and his raindeer"
+              loading="lazy"
+            />
+          </div>
+          <div class="calendar__day--backSide calendar__day--14-backSide">
+            Back
+          </div>
+        </div>
+
+        <div class="calendar__day calendar__day--15">
+          <div class="calendar__day--frontSide calendar__day--15-frontSide">
+            <p class="calendar__day-text calendar__day-text--15">15</p>
+            <img
+              class="calendar__day-image calendar__day-image--15"
+              src="imgs/image15.png"
+              alt="frozen chocolate house"
+              loading="lazy"
+            />
+          </div>
+          <div class="calendar__day--backSide calendar__day--15-backSide">
+            Back
+          </div>
+        </div>
+
+        <div class="calendar__day calendar__day--16">
+          <div class="calendar__day--frontSide calendar__day--16-frontSide">
+            <p class="calendar__day-text calendar__day-text--16">16</p>
+            <img
+              class="calendar__day-image calendar__day-image--16"
+              src="imgs/image16.png"
+              alt="snowman"
+              loading="lazy"
+            />
+          </div>
+          <div class="calendar__day--backSide calendar__day--16-backSide">
+            Back
+          </div>
+        </div>
+
+        <div class="calendar__day calendar__day--17">
+          <div class="calendar__day--frontSide calendar__day--17-frontSide">
+            <p class="calendar__day-text calendar__day-text--17">17</p>
+            <img
+              class="calendar__day-image calendar__day-image--17"
+              src="imgs/image17.png"
+              alt="christmas shirt"
+              loading="lazy"
+            />
+          </div>
+          <div class="calendar__day--backSide calendar__day--17-backSide">
+            Back
+          </div>
+        </div>
+
+        <div class="calendar__day calendar__day--18">
+          <div class="calendar__day--frontSide calendar__day--18-frontSide">
+            <p class="calendar__day-text calendar__day-text--18">18</p>
+            <img
+              class="calendar__day-image calendar__day-image--18"
+              src="imgs/image18.png"
+              alt="hanging christmas stars"
+              loading="lazy"
+            />
+          </div>
+          <div class="calendar__day--backSide calendar__day--18-backSide">
+            Back
+          </div>
+        </div>
+
+        <div class="calendar__day calendar__day--19">
+          <div class="calendar__day--frontSide calendar__day--19-frontSide">
+            <p class="calendar__day-text calendar__day-text--19">19</p>
+            <img
+              class="calendar__day-image calendar__day-image--19"
+              src="imgs/image19.png"
+              alt="party popper"
+              loading="lazy"
+            />
+          </div>
+          <div class="calendar__day--backSide calendar__day--19-backSide">
+            Back
+          </div>
+        </div>
+
+        <div class="calendar__day calendar__day--20">
+          <div class="calendar__day--frontSide calendar__day--20-frontSide">
+            <p class="calendar__day-text calendar__day-text--20">20</p>
+            <img
+              class="calendar__day-image calendar__day-image--20"
+              src="imgs/image20.png"
+              alt="christmas bag"
+              loading="lazy"
+            />
+          </div>
+          <div class="calendar__day--backSide calendar__day--20-backSide">
+            Back
+          </div>
+        </div>
+
+        <div class="calendar__day calendar__day--21">
+          <div class="calendar__day--frontSide calendar__day--21-frontSide">
+            <p class="calendar__day-text calendar__day-text--21">21</p>
+            <img
+              class="calendar__day-image calendar__day-image--21"
+              src="imgs/image21.png"
+              alt="hanging Christmas ornaments"
+              loading="lazy"
+            />
+          </div>
+          <div class="calendar__day--backSide calendar__day--21-backSide">
+            Back
+          </div>
+        </div>
+
+        <div class="calendar__day calendar__day--22">
+          <div class="calendar__day--frontSide calendar__day--22-frontSide">
+            <p class="calendar__day-text calendar__day-text--22">22</p>
+            <img
+              class="calendar__day-image calendar__day-image--22"
+              src="imgs/image22.png"
+              alt="christmas hat"
+              loading="lazy"
+            />
+          </div>
+          <div class="calendar__day--backSide calendar__day--22-backSide">
+            Back
+          </div>
+        </div>
+
+        <div class="calendar__day calendar__day--23">
+          <div class="calendar__day--frontSide calendar__day--23-frontSide">
+            <p class="calendar__day-text calendar__day-text--23">23</p>
+            <img
+              class="calendar__day-image calendar__day-image--23"
+              src="imgs/image23.png"
+              alt="christmas snowflake"
+              loading="lazy"
+            />
+          </div>
+          <div class="calendar__day--backSide calendar__day--23-backSide">
+            Back
+          </div>
+        </div>
+
+        <div class="calendar__day calendar__day--24">
+          <div class="calendar__day--frontSide calendar__day--24-frontSide">
+            <p class="calendar__day-text calendar__day-text--24">24</p>
+            <img
+              class="calendar__day-image calendar__day-image--24"
+              src="imgs/image24.png"
+              alt="christmas mug"
+              loading="lazy"
+            />
+          </div>
+          <div class="calendar__day--backSide calendar__day--24-backSide">
+            Back
+          </div>
+        </div>
+
+        <div class="calendar__day calendar__day--25">
+          <div class="calendar__day--frontSide calendar__day--25-frontSide">
+            <p class="calendar__day-text calendar__day-text--25">25</p>
+            <img
+              class="calendar__day-image calendar__day-image--25"
+              src="imgs/image25.png"
+              alt="happy christmas writing"
+              loading="lazy"
+            />
+          </div>
+          <div class="calendar__day--backSide calendar__day--25-backSide">
+            Back
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

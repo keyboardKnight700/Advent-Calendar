@@ -1,0 +1,13 @@
+.calendar {
+  aspect-ratio: 16/9;
+  height: 90vh;
+  width: calc(90vh * 16 / 9);
+  max-width: 90vw;
+  max-height: calc(90vw / (16 / 9));
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+
+  /* border: 2px solid blue; */
+}
