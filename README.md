@@ -17,7 +17,7 @@ An interactive advent calendar built with HTML, CSS, and vanilla JavaScript.
 
 ## Usage
 
-- Click on the gift box next to Santa to get the next joke.
+- Click on the gift box next to Santa to get the next Christmas joke.
 - Click on the circle of Santa's hat to change the language, english and german availabe.
 - Hover with your mouse on the speech bubble to see the answer.
 
