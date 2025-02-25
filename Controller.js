@@ -5,9 +5,6 @@ import Model from "./Model/Model.js";
 /***********************  Imported stuff from View.js ***********************/
 import View from "./View/View.js";
 
-import merryChristmas from "./merryChristmas.js";
-merryChristmas();
-
 //////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////
 

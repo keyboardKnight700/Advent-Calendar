@@ -1,8 +1,5 @@
 import iframeView from "./iframeView/iframeView.js";
 import iframeModel from "./iframeModel/iframeModel.js";
-import View from "./View/View.js";
-// import CONFIG from "./iframeConfig.js";
-const CONFIG = iframeView.CONFIG;
 
 class iframeController {
   CONFIG = iframeView.CONFIG;
