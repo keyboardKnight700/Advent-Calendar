@@ -10,6 +10,7 @@
 @import url(calendarSantaFigure.css);
 @import url(calendarDays.css);
 @import url(backgroundAnimation.css);
+@import url("../Day1-To-Day25/Day2/day2.css");
 
 :root {
   --bg-color: #f0f0f0;

@@ -1,9 +1,9 @@
-console.log(Math.trunc(Math.random() * 20));
-
 /***********************  Imported stuff from Model.js ***********************/
 import Model from "./Model/Model.js";
 /***********************  Imported stuff from View.js ***********************/
 import View from "./View/View.js";
+
+import CGRD_Player from "./Day1-To-Day25/Day2/day2.js";
 
 //////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////
@@ -18,6 +18,8 @@ class Controller {
     this.sendJokesToSantaFigure();
     // receives messages from the iframe
     this.iframeListener();
+    // CGRD Song
+    CGRD_Player();
   }
 
   intervalForChristmasTimer() {

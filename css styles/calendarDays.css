@@ -72,7 +72,7 @@
   border-radius: 0.5rem;
   box-shadow: 0 2px 5px var(--color-box-shadow);
 
-  border: 1px solid transparent;
+  /* border: 1px solid transparent; */
 }
 
 .calendar__day--backSide {
@@ -83,13 +83,13 @@
 .calendar__day:hover .calendar__day--frontSide {
   transform: rotateY(-180deg);
 
-  border: 3px solid white;
+  /* border: 3px solid white; */
 }
 
 .calendar__day:hover .calendar__day--backSide {
   transform: rotateY(0deg);
 
-  border-color: white;
+  /* border-color: white; */
 }
 
 .calendar__day--1 {
@@ -104,6 +104,10 @@
   grid-area: 1 / 2 / 2 / 4;
   .calendar__day--2-frontSide {
     background-color: var(--image-bg-color2);
+  }
+
+  .calendar__day--2-backSide {
+    background-color: transparent;
   }
 }
 
