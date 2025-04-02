@@ -12,8 +12,8 @@ An interactive advent calendar built with HTML, CSS, and vanilla JavaScript.
 
 ## Installation
 
-1. Clone this repository
-2. open the "Advent-Calendar" folder in the VS Code and go live.
+1. See the webapp live at: https://keyboardknight700.github.io/Advent-Calendar/
+2. Clone this repository, open the "Advent-Calendar" folder in the VS Code and go live.
 
 ## Usage
 
